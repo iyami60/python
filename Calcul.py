@@ -59,6 +59,7 @@ def equal():
         resultat = int(result1)*int(e.get())
     e.delete(0,END)
     e.insert(0,resultat)
+    result1 = int(e.get())
     
 Button(text="Quitter", command=callback,bg="gray",fg="white",padx=15,relief=GROOVE).grid(row=0,column=3)
 btn9 = Button(root,text = "9",padx=30,pady=20,bg="snow4",command=lambda: Inserr(9)).grid(row=2,column=0)
